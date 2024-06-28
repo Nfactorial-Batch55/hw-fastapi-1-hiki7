@@ -7,3 +7,7 @@ app = FastAPI()
 def read_root():
     return {"message": "Hello, nfactorial!"}
 
+
+@app.post("/meaning-of-life")
+def post_meaning_of_life():
+    return {"meaning": 42}
